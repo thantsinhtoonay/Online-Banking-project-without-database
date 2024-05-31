@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPTY PAY</title>
+    <!-- CSS Link-->
+    <link rel="stylesheet" href="../css/index.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome To EMPTY PAY</h1>
+    </header>
+    <main>
+        <div class="balance-container">
+            <h2 id="balance">Your Balance: $<span id="balanceAmount">0</span></h2>
+        </div>
+
+        <div class="operation-container">
+            <label for="depositAmount">Deposit Amount:</label>
+            <input type="number" id="depositAmount" placeholder="Enter amount">
+            <button onclick="startOperation('deposit')">Deposit</button>
+        </div>
+
+        <div class="operation-container">
+            <label for="withdrawAmount">Withdraw Amount:</label>
+            <input type="number" id="withdrawAmount" placeholder="Enter amount">
+            <button onclick="startOperation('withdraw')">Withdraw</button>
+        </div>
+
+        <div class="operation-container">
+            <label for="recipient">Recipient Phone:</label>
+            <input type="text" id="recipient" placeholder="Recipient's phone number">
+            <label for="transferAmount">Transfer Amount:</label>
+            <input type="number" id="transferAmount" placeholder="Enter amount">
+            <button onclick="startOperation('transfer')">Transfer</button>
+        </div>
+
+        <div class="invalid" id="invalidMessage"></div>
+
+        <div class="invoice">
+            <h3>Invoice</h3>
+            <p>Issue Date: <span id="issueDate"></span></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Recipient</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody id="transitionList"></tbody>
+            </table>
+        </div>
+    </main>
+   
+    <!-- JavaScript Link-->
+    <script src="../js/index.js"></script>
+</body>
+</html>

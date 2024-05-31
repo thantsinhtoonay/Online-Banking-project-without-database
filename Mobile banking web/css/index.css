@@ -1,0 +1,95 @@
+body {
+        font-family: 'Arial', 'Helvetica', 'sans-serif';
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+        color: #6d8fb2;
+}
+
+header {
+        background-color: aqua;
+        color: #0c0c0c;
+        padding: 1em;
+        text-align: center;
+ }
+
+main {
+        padding: 20px;
+        text-align: center;
+}
+
+ button {
+        padding: 12px 20px;
+        background-color: #12a2e5;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+}
+
+button:hover {
+        background-color: #0056b3;
+}
+
+input {
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        width: 100%;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease;
+ }
+
+input:focus {
+        border-color: #007bff;
+}
+
+.operation-container {
+        display: inline-block;
+        margin: 20px;
+        vertical-align: top;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: #fff;
+        padding: 20px;
+}
+
+.balance-container {
+        margin-bottom: 20px;
+}
+
+.invoice {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-top: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: auto;
+}
+
+table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+}
+
+th, td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+}
+
+th {
+        background-color: #007bff;
+        color: #fff;
+}
+
+.invalid {
+        color: #dc3545;
+        margin-top: 10px;
+}
+
